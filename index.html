@@ -350,6 +350,23 @@
     .num-col{border-left:none;border-top:1px solid rgba(168,112,86,0.2);padding:28px 16px}
     .num-col:first-child{border-top:none}
   }
+
+  /* ================= FAIXA PRÊMIO ================= */
+  .award-strip{background:var(--bg-alt);border-top:1px solid rgba(168,112,86,0.28);border-bottom:1px solid rgba(168,112,86,0.28);padding:40px}
+  .award-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;gap:44px}
+  .award-photo{width:46%;max-width:520px;aspect-ratio:8/5;object-fit:cover;object-position:center;border-radius:14px;flex-shrink:0;box-shadow:0 16px 40px rgba(0,0,0,0.55)}
+  .award-body{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+  .award-logo{height:50px;width:auto;object-fit:contain}
+  .award-title{font-family:var(--serif);font-size:30px;color:var(--white);font-weight:600;line-height:1.18}
+  .award-sub{font-family:var(--sans);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--copper)}
+  @media(max-width:768px){
+    .award-strip{padding:28px 20px}
+    .award-inner{flex-direction:column;gap:22px;text-align:center}
+    .award-photo{width:100%;max-width:100%}
+    .award-body{align-items:center}
+    .award-title{font-size:22px}
+    .award-logo{height:40px}
+  }
 </style>
 </head>
 <body>
@@ -379,6 +396,19 @@
     <a class="btn" href="#monteo">Conhecer a Monteo</a>
   </div>
 </header>
+
+<!-- ================= PRÊMIO ================= -->
+<section class="award-strip">
+  <div class="award-inner">
+    <img class="award-photo" src="premio-lp.webp" alt="Monteo recebendo o prêmio no Real Estate Awards 2026" loading="lazy">
+    <div class="award-body">
+      <img class="award-logo" src="real-estate-awards-logo.png" alt="Real Estate Awards 2026">
+      <div class="award-title">Eleita a Melhor Empresa de Consórcio Imobiliário do Brasil</div>
+      <div class="award-sub">Real Estate Awards 2026</div>
+    </div>
+  </div>
+</section>
+
 
 <!-- ================= VÍDEO BOAS-VINDAS ================= -->
 <section class="welcome">
